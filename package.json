@@ -4,7 +4,7 @@
   "description": "Simple docker container for sanitizing sql inputs and routing them to a SB",
   "main": "app.js",
   "scripts": {
-    "test": "jasmine-node autotest ./spec"
+    "test": "jasmine-node spec --autotest --watch ."
   },
   "keywords": [
     "sql"
