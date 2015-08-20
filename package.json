@@ -6,6 +6,11 @@
   "scripts": {
     "test": "jasmine-node spec --autotest --watch ."
   },
+  "dependencies":{
+    "promised-io":"^0.3.5",
+    "mysql":"2.8.0",
+    "winston":"^1.0.1"
+    },
   "keywords": [
     "sql"
   ],
