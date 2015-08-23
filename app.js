@@ -22,7 +22,12 @@ var handleRequest = function(req, res) {
 			} else {
 				sql.post(cleanedSQL.query).then(
 					function(results) {
-						res.writeHead(200);
+						res.writeHead(200, {
+							response.writeHead(200, {
+							  'Content-Length': body.length,
+							  'Content-Type': 'application/json',
+							  'Access-Control-Allow-Origin': 'http://localhost.com'
+						});
 						res.end(results);
 						winston.info("Got SQL results:" + results);
 					},
