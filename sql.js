@@ -33,7 +33,6 @@ SQL.prototype.post = function(query) {
       deferred.reject("Error in SQL query: " + err);
     } else {
       var body = {
-        fields:fields,
         rows:rows
       }
       deferred.resolve(JSON.stringify(body));
