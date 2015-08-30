@@ -25,7 +25,7 @@ var handleRequest = function(req, res) {
 						res.writeHead(200, {
 							  'Content-Length': body.length,
 							  'Content-Type': 'application/json',
-							  'Access-Control-Allow-Origin': 'http://localhost.com'
+							  'Access-Control-Allow-Origin': 'http://localhost'
 						});
 						res.end(results);
 						winston.info("Got SQL results:" + results);
