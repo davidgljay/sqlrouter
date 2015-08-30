@@ -23,7 +23,6 @@ var handleRequest = function(req, res) {
 				sql.post(cleanedSQL.query).then(
 					function(results) {
 						res.writeHead(200, {
-							response.writeHead(200, {
 							  'Content-Length': body.length,
 							  'Content-Type': 'application/json',
 							  'Access-Control-Allow-Origin': 'http://localhost.com'
